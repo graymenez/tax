@@ -44,39 +44,39 @@ function browserSyncReload(done) {
 
 // Clean vendor
 function clean() {
-  return del(["./tax/static/assets/vendor/"]);
+  return del(["./static/assets/vendor/"]);
 }
 
 // Bring third party dependencies from node_modules into vendor directory
 function modules() {
   // Bootstrap JS
   var bootstrapJS = gulp.src('./node_modules/bootstrap/dist/js/*')
-    .pipe(gulp.dest('./tax/static/assets/vendor/bootstrap/js'));
+    .pipe(gulp.dest('./static/assets/vendor/bootstrap/js'));
   // Bootstrap SCSS
   var bootstrapSCSS = gulp.src('./node_modules/bootstrap/scss/**/*')
-    .pipe(gulp.dest('./tax/static/assets/vendor/bootstrap/scss'));
+    .pipe(gulp.dest('./static/assets/vendor/bootstrap/scss'));
   // ChartJS
   var chartJS = gulp.src('./node_modules/chart.js/dist/*.js')
-    .pipe(gulp.dest('./tax/static/assets/vendor/chart.js'));
+    .pipe(gulp.dest('./static/assets/vendor/chart.js'));
   // dataTables
   var dataTables = gulp.src([
     './node_modules/datatables.net/js/*.js',
     './node_modules/datatables.net-bs4/js/*.js',
     './node_modules/datatables.net-bs4/css/*.css'
   ])
-    .pipe(gulp.dest('.//tax/static/assets/vendor/datatables'));
+    .pipe(gulp.dest('.//static/assets/vendor/datatables'));
   // Font Awesome
   var fontAwesome = gulp.src('./node_modules/@fortawesome/**/*')
     .pipe(gulp.dest('./vendor'));
   // jQuery Easing
   var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
-    .pipe(gulp.dest('./tax/static/assets/vendor/jquery-easing'));
+    .pipe(gulp.dest('./static/assets/vendor/jquery-easing'));
   // jQuery
   var jquery = gulp.src([
     './node_modules/jquery/dist/*',
     '!./node_modules/jquery/dist/core.js'
   ])
-    .pipe(gulp.dest('./tax/static/assets/vendor/jquery'));
+    .pipe(gulp.dest('./static/assets/vendor/jquery'));
   return merge(bootstrapJS, bootstrapSCSS, chartJS, dataTables, fontAwesome, jquery, jqueryEasing);
 }
 

@@ -13,7 +13,7 @@ import os
 
 app = Flask(__name__)
 
-app.config["SQLALCHEMY_DATABASE_URI"] ='postgresql:///tax_pros_db'
+app.config["SQLALCHEMY_DATABASE_URI"] ='postgresql:///static_pros_db'
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"]=False
 app.config["SQLALCHEMY_ECHO"]=True
 app.config['SECRET_KEY']='854f46078d77cb798c4615f5d1bfc1302a28844340fda940b3120671b2c3f26364dd0275e362a9bb952083387599420d6ec9d60fea4791'
