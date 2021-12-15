@@ -44,7 +44,7 @@ function browserSyncReload(done) {
 
 // Clean vendor
 function clean() {
-  return del(["./static/assets/vendor/"]);
+  return del(["./tax/static/assets/vendor/"]);
 }
 
 // Bring third party dependencies from node_modules into vendor directory

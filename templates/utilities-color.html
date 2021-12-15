@@ -9,16 +9,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Animation Utilities</title>
+    <title>SB Admin 2 - Color Utilities</title>
 
     <!-- Custom fonts for this template-->
-    <link href="static/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="/tax/static/assets/vendor/fontawesome-free/tax/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="static/assets/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="tax/css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -83,9 +83,9 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Colors</a>
+                        <a class="collapse-item active" href="utilities-color.html">Colors</a>
                         <a class="collapse-item" href="utilities-border.html">Borders</a>
-                        <a class="collapse-item active" href="utilities-animation.html">Animations</a>
+                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
                         <a class="collapse-item" href="utilities-other.html">Other</a>
                     </div>
                 </div>
@@ -267,8 +267,7 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="static/assets/img/undraw_profile_1.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -279,8 +278,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="static/assets/img/undraw_profile_2.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="...">
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -291,8 +289,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="static/assets/img/undraw_profile_3.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="...">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
@@ -324,7 +321,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle" src="static/assetsimg/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -358,7 +355,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-1 text-gray-800">Animation Utilities</h1>
+                    <h1 class="h3 mb-1 text-gray-800">Color Utilities</h1>
                     <p class="mb-4">Bootstrap's default utility classes can be found on the official <a
                             href="https://getbootstrap.com/docs">Bootstrap Documentation</a> page. The custom utilities
                         below were created to extend this theme past the default utility classes built into Bootstrap's
@@ -367,96 +364,84 @@
                     <!-- Content Row -->
                     <div class="row">
 
-                        <!-- Grow In Utility -->
-                        <div class="col-lg-6">
+                        <!-- First Column -->
+                        <div class="col-lg-4">
 
-                            <div class="card position-relative">
+                            <!-- Custom Text Color Utilities -->
+                            <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Grow In Animation Utilty</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Custom Text Color Utilities</h6>
                                 </div>
                                 <div class="card-body">
-                                    <div class="mb-3">
-                                        <code>.animated--grow-in</code>
-                                    </div>
-                                    <div class="small mb-1">Navbar Dropdown Example:</div>
-                                    <nav class="navbar navbar-expand navbar-light bg-light mb-4">
-                                        <a class="navbar-brand" href="#">Navbar</a>
-                                        <ul class="navbar-nav ml-auto">
-                                            <li class="nav-item dropdown">
-                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                                    role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">
-                                                    Dropdown
-                                                </a>
-                                                <div class="dropdown-menu dropdown-menu-right animated--grow-in"
-                                                    aria-labelledby="navbarDropdown">
-                                                    <a class="dropdown-item" href="#">Action</a>
-                                                    <a class="dropdown-item" href="#">Another action</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a class="dropdown-item" href="#">Something else here</a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                    <p class="mb-0 small">Note: This utility animates the CSS transform property,
-                                        meaning it will override any existing transforms on an element being animated!
-                                        In this theme, the grow in animation is only being used on dropdowns within the
-                                        navbar.</p>
+                                    <p class="text-gray-100 p-3 bg-dark m-0">.text-gray-100</p>
+                                    <p class="text-gray-200 p-3 bg-dark m-0">.text-gray-200</p>
+                                    <p class="text-gray-300 p-3 bg-dark m-0">.text-gray-300</p>
+                                    <p class="text-gray-400 p-3 bg-dark m-0">.text-gray-400</p>
+                                    <p class="text-gray-500 p-3 m-0">.text-gray-500</p>
+                                    <p class="text-gray-600 p-3 m-0">.text-gray-600</p>
+                                    <p class="text-gray-700 p-3 m-0">.text-gray-700</p>
+                                    <p class="text-gray-800 p-3 m-0">.text-gray-800</p>
+                                    <p class="text-gray-900 p-3 m-0">.text-gray-900</p>
+                                </div>
+                            </div>
+
+                            <!-- Custom Font Size Utilities -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Custom Font Size Utilities</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-xs">.text-xs</p>
+                                    <p class="text-lg mb-0">.text-lg</p>
                                 </div>
                             </div>
 
                         </div>
 
-                        <!-- Fade In Utility -->
-                        <div class="col-lg-6">
+                        <!-- Second Column -->
+                        <div class="col-lg-4">
 
-                            <div class="card position-relative">
+                            <!-- Background Gradient Utilities -->
+                            <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Fade In Animation Utilty</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Custom Background Gradient Utilities
+                                    </h6>
                                 </div>
                                 <div class="card-body">
-                                    <div class="mb-3">
-                                        <code>.animated--fade-in</code>
-                                    </div>
-                                    <div class="small mb-1">Navbar Dropdown Example:</div>
-                                    <nav class="navbar navbar-expand navbar-light bg-light mb-4">
-                                        <a class="navbar-brand" href="#">Navbar</a>
-                                        <ul class="navbar-nav ml-auto">
-                                            <li class="nav-item dropdown">
-                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                                    role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">
-                                                    Dropdown
-                                                </a>
-                                                <div class="dropdown-menu dropdown-menu-right animated--fade-in"
-                                                    aria-labelledby="navbarDropdown">
-                                                    <a class="dropdown-item" href="#">Action</a>
-                                                    <a class="dropdown-item" href="#">Another action</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a class="dropdown-item" href="#">Something else here</a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                    <div class="small mb-1">Dropdown Button Example:</div>
-                                    <div class="dropdown mb-4">
-                                        <button class="btn btn-primary dropdown-toggle" type="button"
-                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false">
-                                            Dropdown
-                                        </button>
-                                        <div class="dropdown-menu animated--fade-in"
-                                            aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                    </div>
-                                    <p class="mb-0 small">Note: This utility animates the CSS opacity property, meaning
-                                        it will override any existing opacity on an element being animated!</p>
+                                    <div class="px-3 py-5 bg-gradient-primary text-white">.bg-gradient-primary</div>
+                                    <div class="px-3 py-5 bg-gradient-secondary text-white">.bg-gradient-secondary</div>
+                                    <div class="px-3 py-5 bg-gradient-success text-white">.bg-gradient-success</div>
+                                    <div class="px-3 py-5 bg-gradient-info text-white">.bg-gradient-info</div>
+                                    <div class="px-3 py-5 bg-gradient-warning text-white">.bg-gradient-warning</div>
+                                    <div class="px-3 py-5 bg-gradient-danger text-white">.bg-gradient-danger</div>
+                                    <div class="px-3 py-5 bg-gradient-light text-white">.bg-gradient-light</div>
+                                    <div class="px-3 py-5 bg-gradient-dark text-white">.bg-gradient-dark</div>
                                 </div>
                             </div>
 
+                        </div>
+
+                        <!-- Third Column -->
+                        <div class="col-lg-4">
+
+                            <!-- Grayscale Utilities -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Custom Grayscale Background Utilities
+                                    </h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="p-3 bg-gray-100">.bg-gray-100</div>
+                                    <div class="p-3 bg-gray-200">.bg-gray-200</div>
+                                    <div class="p-3 bg-gray-300">.bg-gray-300</div>
+                                    <div class="p-3 bg-gray-400">.bg-gray-400</div>
+                                    <div class="p-3 bg-gray-500 text-white">.bg-gray-500</div>
+                                    <div class="p-3 bg-gray-600 text-white">.bg-gray-600</div>
+                                    <div class="p-3 bg-gray-700 text-white">.bg-gray-700</div>
+                                    <div class="p-3 bg-gray-800 text-white">.bg-gray-800</div>
+                                    <div class="p-3 bg-gray-900 text-white">.bg-gray-900</div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -509,14 +494,14 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="static/assets/vendor/jquery/jquery.min.js"></script>
-    <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/tax/static/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="/tax/static/assets/vendor/bootstrap//tax/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="static/assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/tax/static/assets/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="static/assetsjs/sb-admin-2.min.js"></script>
+    <script src="/tax/js/sb-admin-2.min.js"></script>
 
 </body>
 
